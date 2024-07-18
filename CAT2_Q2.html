@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>List of Courses</title>
+<style>
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  /* Header Styles */
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* List Styles */
+  ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  li:hover {
+    background-color: #f7f7f7;
+  }
+
+  /* Course List Styles */
+  .course-list {
+    margin-bottom: 40px;
+  }
+
+  .course-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Data Structures Topics Styles */
+  .data-structures {
+    margin-top: 40px;
+  }
+
+  .data-structures ol {
+    counter-reset: item;
+  }
+
+  .data-structures li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .data-structures li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+
+  <h1>List of available courses</h1>
+  <ul class="course-list">
+    <li>Data Structures & Algorithm</li>
+    <li>Web Technology</li>
+    <li>Apptitude & Logical Reasoning</li>
+    <li>Programming Languages</li>
+  </ul>
+
+  <div class="data-structures">
+    <h1>Data Structures topics</h1>
+    <ol>
+      <li>Array</li>
+      <li>Linked List</li>
+      <li>Stacks</li>
+      <li>Queues</li>
+      <li>Trees</li>
+      <li>Graphs</li>
+    </ol>
+  </div>
+
+</body>
+</html>
